@@ -1,0 +1,3 @@
+modules:
+  - CaFeZn/dronecan_core@main
+  - CaFeZn/dronecan_dsdl@main

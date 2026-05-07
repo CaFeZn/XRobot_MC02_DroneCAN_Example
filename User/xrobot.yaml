@@ -1,0 +1,26 @@
+constexpr_namespace: XRobotProjectConstexpr
+constexpr_includes:
+  - <cstdint>
+
+constexprs:
+  DroneCANNodeId:
+    type: std::uint8_t
+    value: 42
+  DroneCANNodeStatusPeriodMs:
+    type: std::uint32_t
+    value: 1000
+
+global_settings:
+  monitor_sleep_ms: 1
+
+modules:
+  - id: dronecan_dsdl
+    name: dronecan_dsdl
+    constructor_args:
+      node_id:
+        constexpr: DroneCANNodeId
+      can_alias: can1
+      timebase_alias: timebase
+      node_name: org.libxr.h7.dronecan
+      node_status_period_ms:
+        constexpr: DroneCANNodeStatusPeriodMs

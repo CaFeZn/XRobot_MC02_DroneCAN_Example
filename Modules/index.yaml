@@ -1,0 +1,4 @@
+namespace: CaFeZn
+modules:
+  - https://github.com/CaFeZn/dronecan_core.git
+  - https://github.com/CaFeZn/dronecan_dsdl.git

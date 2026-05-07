@@ -1,0 +1,9 @@
+[submodule "libxr"]
+	path = libxr
+	url = https://github.com/CaFeZn/libxr.git
+[submodule "Modules/dronecan_core"]
+	path = Modules/dronecan_core
+	url = https://github.com/CaFeZn/dronecan_core.git
+[submodule "Modules/dronecan_dsdl"]
+	path = Modules/dronecan_dsdl
+	url = https://github.com/CaFeZn/dronecan_dsdl.git

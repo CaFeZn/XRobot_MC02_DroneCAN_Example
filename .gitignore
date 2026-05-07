@@ -1,0 +1,16 @@
+build/
+Modules_backup*/
+Exports/
+.cache/
+.settings/
+CMakeUserPresets.json
+tools/xrobot/.venv/
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.su
+*.o
+*.obj
+*.d
