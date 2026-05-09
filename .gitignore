@@ -3,7 +3,7 @@ Modules_backup*/
 Exports/
 .cache/
 .settings/
-.vscode/settings.json
+.vscode/
 CMakeUserPresets.json
 tools/xrobot/.venv/
 *.elf
