@@ -3,6 +3,7 @@
 
 // Module headers
 #include "dronecan_dsdl.hpp"
+#include "dronecan_example.hpp"
 #include "xrobot_constexpr.hpp"
 
 static void XRobotMain(LibXR::HardwareContainer &hw) {
@@ -19,6 +20,7 @@ static void XRobotMain(LibXR::HardwareContainer &hw) {
       "org.libxr.h7.dronecan",
       XRobotProjectConstexpr::DroneCANNodeStatusPeriodMs
   );
+  static DroneCANExample dronecan_example(dronecan_dsdl, appmgr);
 
   while (true) {
     appmgr.MonitorAll();

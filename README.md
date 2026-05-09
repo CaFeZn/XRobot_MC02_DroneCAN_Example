@@ -11,6 +11,11 @@ This repository is an STM32H723 XRobot example project for DroneCAN over FDCAN1.
   - `Modules/dronecan_core`
   - `Modules/dronecan_dsdl`
 - FDCAN1 configured for classic DroneCAN/SLCAN regression testing
+- `User/dronecan_example.hpp` demonstrates both APIs:
+  - normal mode receives `RawCommand` with typed callbacks and sends `Status`
+    with `DroneCANDsdl::PublishUavcanEquipmentEscStatus()`
+  - Topic mode subscribes `/dronecan/uavcan/equipment/esc/Status` and publishes
+    `/dronecan/tx/uavcan/equipment/esc/RawCommand`
 
 ## Hardware baseline
 
